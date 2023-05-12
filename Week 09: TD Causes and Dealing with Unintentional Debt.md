@@ -1,0 +1,1 @@
+<img src="assets/2023.05.12%20-%2011_30_23%20-%20%20%5BGoogle%20Chrome-Course%20COMP4130%20-%20Managing%20Software%20Quality%20and%20Process%20-%20Sem%201%202023%20%5D%20-.jpg" alt="2023.05.12 - 11_30_23 -  [Google Chrome-Course COMP4130 - Managing Software Quality and Process - Sem 1 2023 ] -" style="zoom:23%;" /> 
