@@ -89,7 +89,7 @@ Steps to highlight TD items:
 
 
 
-### STEP2: Calculate remidation cost (fixing cost)
+### Setp2: Calculate remidation cost (fixing cost)
 
 -   The cost of fixing the quality problem compairses the **current principal** 本金 and **accured interest** 利息. 
 
@@ -132,16 +132,200 @@ Steps to highlight TD items:
 
 
 
-## Example: Phobe Case 
+### Example: Phobe Case 
 
-- Starting Point <img src="assets/2023.05.12%20-%2010_26_59%20-%20%20%5BPreview-6-Lecture-Week6.pdf%5D%20-.jpg" alt="2023.05.12 - 10_26_59 -  [Preview-6-Lecture-Week6.pdf] -" style="zoom:33%;" /> 
-- ↓ Step-1: Refinement of TD <img src="assets/2023.05.12%20-%2010_28_15%20-%20%20%5BPreview-6-Lecture-Week6.pdf%5D%20-.jpg" alt="2023.05.12 - 10_28_15 -  [Preview-6-Lecture-Week6.pdf] -" style="zoom:33%;" />  
-- ↓ Step-2: Cost of fixing (remediation) <img src="assets/2023.05.12%20-%2010_28_22%20-%20%20%5BPreview-6-Lecture-Week6.pdf%5D%20-.jpg" alt="2023.05.12 - 10_28_22 -  [Preview-6-Lecture-Week6.pdf] -" style="zoom:33%;" />
-- ↓ Step-3: Cost of not-fixing (recurring interest)<img src="assets/2023.05.12%20-%2010_28_49%20-%20%20%5BPreview-6-Lecture-Week6.pdf%5D%20-.jpg" alt="2023.05.12 - 10_28_49 -  [Preview-6-Lecture-Week6.pdf] -" style="zoom:33%;" /> 
+- Starting Point
+
+     <img src="assets/2023.05.12%20-%2010_26_59%20-%20%20%5BPreview-6-Lecture-Week6.pdf%5D%20-.jpg" alt="2023.05.12 - 10_26_59 -  [Preview-6-Lecture-Week6.pdf] -" style="zoom:33%;" /> 
+
+- ↓ Step-1: Refinement of TD
+
+     <img src="assets/2023.05.12%20-%2010_28_15%20-%20%20%5BPreview-6-Lecture-Week6.pdf%5D%20-.jpg" alt="2023.05.12 - 10_28_15 -  [Preview-6-Lecture-Week6.pdf] -" style="zoom:33%;" />  
+
+- ↓ Step-2: Cost of fixing (remediation)
+
+     <img src="assets/2023.05.12%20-%2010_28_22%20-%20%20%5BPreview-6-Lecture-Week6.pdf%5D%20-.jpg" alt="2023.05.12 - 10_28_22 -  [Preview-6-Lecture-Week6.pdf] -" style="zoom:33%;" />
+
+- ↓ Step-3: Cost of not-fixing (recurring interest)
+
+    <img src="assets/2023.05.12%20-%2010_28_49%20-%20%20%5BPreview-6-Lecture-Week6.pdf%5D%20-.jpg" alt="2023.05.12 - 10_28_49 -  [Preview-6-Lecture-Week6.pdf] -" style="zoom:33%;" /> 
 
 
 
 
 
 
+
+
+
+## Cost and Benifit 
+
+
+
+### Weighting Cost and Benifit
+
+
+
+#### What "Cost", What "Benifit" ?
+
+In decising wtat to do, you will need to consider **the busness case** for the debts reducting, indcluding the cost and corresponding beninifts. 
+
+-   Cost: 
+    -   Current principal and accuring interests 
+    -   Opporunity cost of delaying feature releases 
+-   Beinift:
+    -   Reduced recurring interests
+    -   Reduced risk liability 
+
+And here is an example of such cost and benifit case, 
+
+(in timeline order )
+
+1.   Evaluate the bennifts of reducing liability and recurring inetests 
+
+2.   Estimate the **opportunity of delaying th delivery of new feature** 
+
+     as you remediate the debt and the cost of paying the current principal and accuring interests 
+
+3.   Consider the business case/scenario 
+
+     when incurring or carrying depts swaps these facrots 
+
+     (meaning TD has more beninits than developing more feature )
+
+4.   In the case before ... the beninifts become the cost saving 
+
+     of carrying the debt along with ealier feature delivery
+
+5.   The cost becomes the recurring interests and increased liability
+
+
+
+#### Utilizing the concept of Cost and Benifits 
+
+With the answer to that question, you can examine the technical debt items youin your registry and determine:
+
+-   Which TD you should **remediate**                  (fix:       benifit > cost) 
+-   Which TD you **can continue to live with**    (not fix: benifit > cost)
+
+Wighting cost and benifit of the TD items you have in yoru reister will also help you:
+
+-   Discuss and prioritize action to take to decide how to remediate the debt
+
+
+
+
+
+### Communicating Cost and Benift 
+
+#### Intiuition 
+
+-   **The question is: how do you communicate this?**
+-   Saying "it makes the code easier to handle" can be understood by a fellow
+    developer, but the people paying you (the stakeholders, the clients, etc)
+    need the explanation translated into something they can understand.
+-   That shared understanding is money and finances.
+
+#### Building a business case: Risk of failture ==失败成本==
+
+-   A reslistic business case for TD reductiojn is an important tool to put the ris and cost related to RD, on the radar of the business stakhodler who can do somehting baoutit. Risk and opportunity cost often have more impact than the recurring maintainacne and direct remediation cost (others like security risk are easily understood without eplaining it in money)
+
+    <img src="assets/2023.05.12%20-%2010_53_30%20-%20%20%5BPreview-6-Lecture-Week6.pdf%5D%20-.jpg" alt="2023.05.12 - 10_53_30 -  [Preview-6-Lecture-Week6.pdf] -" style="zoom:33%;" /> 
+
+#### Building a business case: Opportunity cost ==机会成本==
+
+-   When the development team spends resource and time on reducing TD (upgrading, refacroting, repairing)
+
+    the team will **procuce fewer end-user sorties** (implmenting less feature) during that time 
+
+    Opportunity cost represent the business value that those end-user stories would have yielded, 
+
+    as a way of accounting for the scarcity of the team's resource. 
+
+    <img src="assets/2023.05.12%20-%2010_55_59%20-%20%20%5BPreview-6-Lecture-Week6.pdf%5D%20-.jpg" alt="2023.05.12 - 10_55_59 -  [Preview-6-Lecture-Week6.pdf] -" style="zoom:33%;" /> 
+
+
+
+
+
+
+
+
+
+
+
+## Pathway to Service TD 
+
+### Servicing Existing Dept
+
+-   When deciding what to do in the upcoming iterations, you will need to **consider all the items on your backlog**  yet to do and their dependencies, including the TD items;  If you want a system to **evolve in a certain direciotn**, for instance, by adding new feature, you will need to analuze which part of the system will be affectd by this evlution 
+
+    
+
+    **Steps to service the TD** 
+
+    1.   Identify the path that will be affected by change 明确影响程度==
+    2.   Determine whether TD items are associated with these part of the tstsem 明确依赖关系==
+    3.   Identify the conseuqence of TD on this and possible other hcnages 预期不修补的后果==
+    4.   Estimate the cost of TD repayment and ad it to the cost of the changes 预期修补需要的成本==
+    5.   Estimate the beniit of TD relayment in enableing the devleopment of this and possibley other chagnes 预期未来回报==
+
+### Servicing Potential Debt
+
+-   You might have a **potential for TD**, but it will only be actual TD only if you have to evolve your system. You might also decide to walk away from your TD by running away from the old system (通过从头开始避免TD)
+-   If you take a TD incurring deicsion, it may **only actualy become TD the moment at the moment your system has to evolve** ... meaning that: until the moment it will not negatively affect the quality of yoru system.
+
+
+
+### What do you fix, then ?
+
+-   You may have identified TD itmes, nut you camnot assocaite to them in any meaningful metric of cost **until you look into the furtue** and condier dependencies, among TD items and dependencies of **future** feature on them 
+
+    All paths are influenced by the **cost-benifit trade-off** of servicing the debt.
+
+-   Paths 
+
+    -   **A prospective evluation 前瞻性评估**
+
+        -   The system may have some potential debt, but because it is affected by a prospective evluation, it now has actual debt. 
+
+        -   (如果业务要增长,那么有些潜在的债务就会被坐实)
+
+            >   The cost to fix includes the cost of relaying the technical debt and the opportunity cost of delaying ghe feature
+
+    -   Mitigating Risk 减轻风险
+
+        -   Business decisions will always affect **what is done on** and about the sofwtare. If your system is already deployed, you may have defects to fix urgently These are negative because it decrease syste,'s usavility, and may make the customor unhappy. 
+
+        -   (对生产进行例行更新, 可能会使得系统下线)
+
+        -   Overtime risk liability may be the most important factor in the case for debt reduction 
+
+            >    The total cost incldues the cost of backlogging item, the cost of repaying the technical debt, and the opportunity cost of delauing feature. 
+
+    -   Discard TD 规避债务
+
+        -   In amnesty, you write off the accured Td and do not have to relay it. (放弃不需要的部分)
+            -   Example: throw-away prototype, delete a feature that is no longer needed
+        -   Bankrupcy: (从零开始)
+            -   The part of the sofatre system that has TD items is no longer viable to support future development, and a complete rewrite is needed. 
+
+
+
+### Supplementary (release path)
+
+#### A release pipeline with TD 
+
+-   The differnt path to servicing technical debt can be used individually and in combination to sort out and prioritize the product backlog nad assign the backlog element of iteration or releaseses 
+
+    <img src="assets/2023.05.12%20-%2011_18_42%20-%20%20%5BPreview-6-Lecture-Week6.pdf%5D%20-.jpg" alt="2023.05.12 - 11_18_42 -  [Preview-6-Lecture-Week6.pdf] -" style="zoom:33%;" /> 
+
+    -   When you ahve the mechnism in place ot service the technical debt, you can run some **what-if scenarios** to adjust the technical debt remediation timeline 
+    -   While running what-if analysis on scenarios and comparing their implications will give you more information to make choices, you might still have the resouces to select only a few of the debt repayment refacrotings 
+
+#### "Investing" on Technical Debt 
+
+-   The NPV (net present value) is the hypothetical avlue (estimated today) of a investment made today comapred to its future returns, that is, it is possible value in the future. 
+
+    <img src="assets/2023.05.12%20-%2011_21_15%20-%20%20%5BPreview-6-Lecture-Week6.pdf%5D%20-.jpg" alt="2023.05.12 - 11_21_15 -  [Preview-6-Lecture-Week6.pdf] -" style="zoom:33%;" /> 
 
